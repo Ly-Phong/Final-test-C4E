@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caro Game</title>
+    <link rel="stylesheet" href="index.css">
+
+  </head>
+  <body>
+    <div class="container">
+      <p id="player-turn"></p>
+      <h1>Bấm bắt đầu để chơi</h1>
+
+      <table class="board">
+        <tr>
+          <td onclick="cellClicked(0, 0)"></td>
+          <td onclick="cellClicked(0, 1)"></td>
+          <td onclick="cellClicked(0, 2)"></td>
+        </tr>
+        <tr>
+          <td onclick="cellClicked(1, 0)"></td>
+          <td onclick="cellClicked(1, 1)"></td>
+          <td onclick="cellClicked(1, 2)"></td>
+        </tr>
+        <tr>
+          <td onclick="cellClicked(2, 0)"></td>
+          <td onclick="cellClicked(2, 1)"></td>
+          <td onclick="cellClicked(2, 2)"></td>
+        </tr>
+      </table>
+
+      <button class="button-1" onclick="startGame()">Bắt đầu</button>
+      <button class="button-2" onclick="resetGame()">Chơi lại</button>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
